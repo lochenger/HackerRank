@@ -12,13 +12,7 @@
 
 Node Insert(Node head,int x) {
     Node n = new Node();
-    n.next = null;
     n.data = x;
-    
-    if (head == null) {
-        return n;
-    } else {
-        n.next = head;
-        return n;
-    }
+    n.next = head;
+    return n;
 }
